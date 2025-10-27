@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* ensures body at least fills full screen */
+}
+
+.body-con {
+    flex-grow: 1;
+    /* this expands the main content area */
+}
+
+header {
+    background-color: midnightblue;
+    color: azure;
+    padding: 32px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: cornflowerblue;
+    padding: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+nav li {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: midnightblue;
+    padding: 12px;
+}
+
+.main-con {
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-con main {
+    padding: 32px;
+    margin: 32px 16px 16px 16px;
+    background-color: aliceblue;
+    width: 45%;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px 2px gray;
+}
+
+.main-con main h2 {
+    color: midnightblue;
+    margin-bottom: 16px;
+}
+
+.main-con main p {
+    color: dimgray;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+
+.main-con aside {
+    padding: 32px;
+    margin: 32px 16px 16px 16px;
+    background-color: aliceblue;
+    width: 20%;
+    height: fit-content;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px 2px gray;
+}
+
+.main-con aside h2 {
+    color: midnightblue;
+    margin-bottom: 16px;
+}
+
+.main-con aside ul {
+    list-style: none;
+}
+
+.main-con aside li {
+    background-color: white;
+    padding: 10px;
+    margin: 14px;
+    border-radius: 8px;
+    border-left: 4px solid midnightblue;
+}
+
+.main-con aside li:hover,
+.main-con aside li a:hover {
+    background-color: midnightblue;
+    padding: 12px;
+    color: azure;
+}
+
+.main-con aside a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+footer {
+    padding: 10px;
+    background-color: midnightblue;
+    color: azure;
+    text-align: center;
+}
+
+footer span {
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
